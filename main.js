@@ -1,6 +1,6 @@
 img = "";
 status = "";
-objects = [];
+objects = []; 
 function setup(){
     canvas = createCanvas(640,420);
     canvas.center();
@@ -8,21 +8,21 @@ function setup(){
     document.getElementById("status").innerHTML = "Status : Detecting Objects";
 }
 function preload(){
-    img = loadImage('laptop and tab image.jpg');
+    img = loadImage('laptop_tab_image.jpg');
 }
 function draw(){
-   /* image(img, 0, 0, 640, 420);
+    image(img, 0, 0, 640, 420);
+   /* fill("#00FF00");
+    text("Laptop", 45, 75);
+    noFill();
+    stroke("#00FF00");
+    rect(30, 60, 450, 350);
     fill("#00FF00");
-    text("Laptop", 220, 40);
+    text("Tablet", 320, 120);
     noFill();
     stroke("#00FF00");
-    rect(220, 50, 350, 300);
-    fill("#00FF00")
-    text("Tablet", 70, 95);
-    noFill();
-    stroke("#00FF00");
-    rect(70, 100, 220, 220);
-    */
+    rect(300, 90, 270, 320);
+     */
     if(status !="")
     {
         for(i = 0; i < objects.length; i++)
